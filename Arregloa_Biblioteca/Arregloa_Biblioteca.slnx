@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../MiArreglo/MiArreglo.csproj" />
+  <Project Path="Arregloa_Biblioteca.csproj" />
+</Solution>
