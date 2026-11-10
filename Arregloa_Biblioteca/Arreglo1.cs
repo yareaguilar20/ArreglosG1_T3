@@ -25,6 +25,12 @@ namespace Arregloa_Biblioteca
         public bool EstaVacio => _tope == 0;
 
         //Metodos
+        public void Llenar()
+        {
+            Llenar(1, 100);
+        }
+
+        //Metodos
         public void Llenar(int minimo, int maximo)
         {
             Random oRandom = new Random();
@@ -72,7 +78,7 @@ namespace Arregloa_Biblioteca
         }
 
 
-        public void Agregar()
+        public void Agregar(int n)
         {
             if (EstaLleno)
             {
@@ -106,6 +112,29 @@ namespace Arregloa_Biblioteca
             _tope++;
 
         }
+        public Arreglo1 ObtenerPares()
+        {
+            int contadorPares = 0;
+            for (int i = 0; i < _tope; i++)
+
+            {
+                if (_arreglo[i] % 2 == 0)
+                {
+                    contadorPares++;
+                }
+            }
+            var arregloPares = new Arreglo1(contadorPares);
+            for (int i = 0; i < _tope; i++)
+            {
+                if (_arreglo[i] % 2 == 0)
+                {
+                    arregloPares.Agregar(_arreglo[i]);
+                }
+            }
+        }
+            
+           
+        
 
 
         public void Eliminar(int posicion)

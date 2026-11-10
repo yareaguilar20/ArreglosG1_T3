@@ -21,3 +21,19 @@ internal class Program
         Console.WriteLine(miArreglo);
     }
 }
+//MiArreglo oMyArreglo = new(100);
+//try
+//{
+// Console.WriteLine(_"\nArreglo\n");
+// oMyArreglo.Llenar();
+//Console.WriteLine(oMyArreglo);
+//Console.Readkey();
+
+//Console.WriteLine(_"\nPares\n");
+//ver Pares = oMyArreglo.ObtenerPares();
+//Console.WriteLine(verPares);
+//Console.Readkey();
+
+
+
+//}
