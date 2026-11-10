@@ -193,38 +193,38 @@ namespace Arregloa_Biblioteca
     
 
  ////Método ObtenerPrimos
-    public Arreglo1 ObtenerPrimos()
-    {
-    int contadorPrimos = 0;
-    for (int i = 0; i < _tope; i++)
+    //public Arreglo1 ObtenerPrimos()
+    //{
+    //int contadorPrimos = 0;
+    //for (int i = 0; i < _tope; i++)
 
-    {
-        if (_arreglo[i] == 1 ){ continue;}
-        if (EsPrimo(_arreglo[i]))
-    {
-    contadorPrimos++
-     }
-}
-    var arregloPrimos = new MiArreglo(contadorPrimos);
-        for (int i = 0; < _tope; i++)
-{
-    if (EsPrimo(_arreglo[i]))
-    {
-        arregloPrimos.Agregar(_arreglo[i]);
-    }
-}
-return arregloPrimos;
-
-
-
-return;
-//Método EsPrimo
-private bool EsPrimo(int n);
+    //{
+       // if (_arreglo[i] == 1 ){ continue;}
+        //if (EsPrimo(_arreglo[i]))
+    //{
+    //contadorPrimos++
+    // }
+//}
+   // var arregloPrimos = new MiArreglo(contadorPrimos);
+        //for (int i = 0; < _tope; i++)
 //{
-    for (int i=2; i < n; i++)
-    {
-        if (n % i == 0)
-            return true;
-    }
+    //if (EsPrimo(_arreglo[i]))
+    //{
+     //   arregloPrimos.Agregar(_arreglo[i]);
+    //}
+//}
+//return arregloPrimos;
 
-return true;
+
+
+//return;
+//Método EsPrimo
+//private bool EsPrimo(int n);
+//{
+    //for (int i=2; i < n; i++)
+    //{
+       // if (n % i == 0)
+        //    return true;
+   // }
+
+//return true;
