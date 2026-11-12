@@ -19,6 +19,8 @@ internal class Program
         Console.WriteLine("Arreglo ordenado ascendente\n");
         miArreglo.Ordenar();
         Console.WriteLine(miArreglo);
+        
+
     }
 }
 //MiArreglo oMyArreglo = new(100);
@@ -35,4 +37,9 @@ internal class Program
 //Console.Readkey();
 
 
-
+Console.WriteLine($"\nTiempo transcurrido\n");
+var tiempo1 = DateTime.Now;
+miArreglo.Llenar(1, 9999);
+var tiempo2 = DateTime.Now;
+var RestarTiempo = tiempo2 - tiempo1;
+Console.WriteLine($"Tiempo transcurrido: {RestarTiempo.TotalMilliseconds} ms");

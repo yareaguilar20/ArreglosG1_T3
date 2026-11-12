@@ -113,7 +113,7 @@ namespace Arregloa_Biblioteca
             _tope++;
 
         }
-        public Arreglo1 ObtenerPares()
+        public Arreglo1 ()
         {
             int contadorPares = 0;
             for (int i = 0; i < _tope; i++)
